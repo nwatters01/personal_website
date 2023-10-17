@@ -2,17 +2,167 @@
 <html lang="en">
     <head>
  
-        <title>Bootstrap Tutorial Sample Page</title>
+        <title>Nick Watters</title>
+        <!-- Meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    
+
+        <!-- Custom Styles -->
+        <style>
+            body {
+                font-family: Roboto, 'sans-serif';
+                font-size: 16px;
+                background-color: #FFFFFF;
+                color: #4F6071;
+            }
+            h1 {
+                font-weight: 300;
+                font-size: 2rem;
+            }
+            #header {
+                background-color: #f4f4f4;
+                display: flex;
+                align-items: flex-end;
+                padding-top:60px;
+                padding-bottom:60px;
+            }
+            #footer {
+                background-color: #FFFFFF;
+                padding:60px;
+            }
+            #portrait {
+                border: 3px solid white;
+            }
+            #header-text {
+                margin-top: 60px;
+                margin-left: 220px;
+            }
+            #header-text-name {
+                font-size: 40px;
+            }
+            #header-text-title {
+                font-size: 17px;
+            }
+            #header-text-affiliation {
+                font-size: 17px;
+                margin-top: 10px;
+            }
+            #header-text-email {
+                margin-top: 10px;
+                font-size: 17px;
+                font-style: italic;
+            }
+            .header-text-desc {
+                font-size: 20px;
+            }
+            .vspace-top {
+                margin-top: 30px;
+            }
+            .vspace-top-news {
+                margin-top: 15px;
+            }
+            .paper-image {
+                width: 150px;
+            }
+            .news-date {
+                font-weight: bold;
+            }
+            .paper-title {
+                font-weight: bold;
+            }
+            .paper-authors {
+                font-style: italic;
+            }
+        </style>
     </head>
+
     <body>
-    
-        <script src="jquery-3.5.1.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
         
-    </body>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="jquery/jquery-3.5.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <div id='header'>
+            <div class='container'>
+                <div class='row'>
+                    <div class="col-sm-3 offset-sm-1">
+                        <img src='images/portrait.jpg' class='img-fluid' id='portrait'>
+                    </div>
+
+                    <div class="col">
+                    <div id='header-text-name'>
+                        Nick Watters
+                    </div>
+                        <div id='header-text-title'>
+                            PhD Candidate, Department of Brain and Cognitive Sciences, MIT</a>
+                        </div>
+                    <div id='header-text-email'>
+                            nwatters@mit.edu
+                    </div>
+                    <div>
+                        <a href="documents/curriculum_vitae.pdf">Curriculum Vitae</a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/nwatters01">Personal GitHub Page</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='container'>
+            <div class='row vspace-top'>
+                <div class='col offset-sm-1'>
+                    <h1>Bio</h1>
+                    <p>
+                        I am a PhD candidate in the Department of Brain and Cognitive Sciences at MIT.
+                        My current research focuses on studying cognitive science questions using tools
+                        from systems neuroscience, though going forward I am interested in transitioning
+                        to work on brain computer interfaces. My background is in AI & machine learning,
+                        so I'm particularly interested in questions that bear on shortcomings of current
+                        AI (e.g. how the brain does transfer learning, generalization, compositional
+                        planning, etc.). Currently, I work in Mehrdad Jazayeri's lab doing neurophysiology
+                        on monkeys playing video games, focusing on neural representations of objects and dynamics.
+                    </p>
+
+                    <p>
+                        Aside from research, I like playing music (jazz piano), sports (ultimate frisbee,
+                        soccer, climbing), and board games.
+                    </p>
+
+
+                    <div class='vspace-top'>
+                        <h1>Publications</h1>
+                    </div>
+
+                    <div class='row vspace-top'>
+                        <div class="col-sm-3">
+                            <img src="images/visual_interaction_networks_cropped.gif?raw=true" width="100%">
+                        </div>
+
+                        <div class="col">
+                            <div class='paper-title'>
+                                Visual Interaction Networks.
+                            </div>
+                            <div class='paper-desc'>
+                                NeurIPS 2017
+                            </div>
+                            <div class='paper-authors'>
+                                <u>Nick Watters</u>*, Daniel Zoran, Theophane Weber, Peter Battaglia
+                            </div>
+                            <div>
+                                <a href="https://papers.nips.cc/paper_files/paper/2017/hash/8cbd005a556ccd4211ce43f309bc0eac-Abstract.html">[Paper]</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     
+    </body>
+        
 </html>
