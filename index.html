@@ -15,26 +15,24 @@
             body {
                 font-family: Roboto, 'sans-serif';
                 font-size: 16px;
-                background-color: #FFFFFF;
-                color: #4F6071;
+                color: #545c65;
             }
             h1 {
                 font-weight: 300;
                 font-size: 2rem;
             }
             #header {
-                background-color: #f4f4f4;
+                background-color: #f0eeee;
                 display: flex;
                 align-items: flex-end;
                 padding-top:60px;
                 padding-bottom:60px;
             }
             #footer {
-                background-color: #FFFFFF;
-                padding:60px;
+                padding-bottom:60px;
             }
-            #portrait {
-                border: 3px solid white;
+            #image {
+                border: 3px solid black;
             }
             #header-text {
                 margin-top: 60px;
@@ -45,10 +43,6 @@
             }
             #header-text-title {
                 font-size: 17px;
-            }
-            #header-text-affiliation {
-                font-size: 17px;
-                margin-top: 10px;
             }
             #header-text-email {
                 margin-top: 10px;
@@ -61,19 +55,13 @@
             .vspace-top {
                 margin-top: 30px;
             }
-            .vspace-top-news {
-                margin-top: 15px;
-            }
-            .paper-image {
+            .publication-image {
                 width: 150px;
             }
-            .news-date {
+            .publication-title {
                 font-weight: bold;
             }
-            .paper-title {
-                font-weight: bold;
-            }
-            .paper-authors {
+            .publication-authors {
                 font-style: italic;
             }
         </style>
@@ -89,7 +77,7 @@
             <div class='container'>
                 <div class='row'>
                     <div class="col-sm-3 offset-sm-1">
-                        <img src='images/portrait.jpg' class='img-fluid' id='portrait'>
+                        <img src='images/portrait.jpg' class='img-fluid' id='image'>
                     </div>
 
                     <div class="col">
@@ -100,7 +88,7 @@
                             PhD Candidate, Department of Brain and Cognitive Sciences, MIT</a>
                         </div>
                     <div id='header-text-email'>
-                            nwatters@mit.edu
+                        <a href = "mailto: nwatters@mit.edu">nwatters@mit.edu</a>
                     </div>
                     <div>
                         <a href="documents/curriculum_vitae.pdf">Curriculum Vitae</a>
@@ -116,16 +104,27 @@
         <div class='container'>
             <div class='row vspace-top'>
                 <div class='col offset-sm-1'>
-                    <h1>Bio</h1>
+                    
+                    <div class='vspace-top'>
+                        <h1>Bio</h1>
+                    </div>
+
                     <p>
                         I am a PhD candidate in the Department of Brain and Cognitive Sciences at MIT.
-                        My current research focuses on studying cognitive science questions using tools
-                        from systems neuroscience, though going forward I am interested in transitioning
-                        to work on brain computer interfaces. My background is in AI & machine learning,
-                        so I'm particularly interested in questions that bear on shortcomings of current
-                        AI (e.g. how the brain does transfer learning, generalization, compositional
-                        planning, etc.). Currently, I work in Mehrdad Jazayeri's lab doing neurophysiology
-                        on monkeys playing video games, focusing on neural representations of objects and dynamics.
+                        I work in Mehrdad Jazayeri's lab studying how the primate brain represents
+                        multi-object scenes, predicts the dynamics of moving objects, and flexibly
+                        executes manual grasping and insertion of objects.
+                        More broadly, I'm interested in studying neuroscientific questions that bear
+                        on shortcomings of current AI, such as how the brain does sample-efficient
+                        learning and flexible generalization.
+                        Going forward I plan to work on brain computer interfaces and robotics.
+                    </p>
+
+                    <p>
+                        Before beginning my PhD I worked as a research engineer at Google Deepmind,
+                        where I focused on visual unsupervised learning and reinforcement learning.
+                        Before that I did my undergrad at Harvard, where I majored in math and
+                        computer science.
                     </p>
 
                     <p>
@@ -133,25 +132,26 @@
                         soccer, climbing), and board games.
                     </p>
 
-
                     <div class='vspace-top'>
                         <h1>Publications</h1>
                     </div>
 
                     <div class='row vspace-top'>
                         <div class="col-sm-3">
-                            <img src="images/visual_interaction_networks_cropped.gif?raw=true" width="100%">
+                            <div class="publication-image">
+                                <img src="images/visual_interaction_networks_cropped.gif?raw=true" width="100%" id='image'>
+                            </div>
                         </div>
 
                         <div class="col">
-                            <div class='paper-title'>
+                            <div class='publication-title'>
                                 Visual Interaction Networks.
                             </div>
-                            <div class='paper-desc'>
+                            <div class='publication-desc'>
                                 NeurIPS 2017
                             </div>
-                            <div class='paper-authors'>
-                                <u>Nick Watters</u>*, Daniel Zoran, Theophane Weber, Peter Battaglia
+                            <div class='publication-authors'>
+                                <u>Nick Watters</u>*, Daniel Zoran, Theophane Weber, Peter Battaglia, Razvan Pascanu, Andrea Tacchetti
                             </div>
                             <div>
                                 <a href="https://papers.nips.cc/paper_files/paper/2017/hash/8cbd005a556ccd4211ce43f309bc0eac-Abstract.html">[Paper]</a>
@@ -162,6 +162,8 @@
                 </div>
             </div>
         </div>
+
+        <div id='footer'></div>
     
     </body>
         
