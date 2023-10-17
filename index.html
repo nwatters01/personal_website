@@ -18,8 +18,9 @@
                 color: #545c65;
             }
             h1 {
-                font-weight: 300;
+                font-weight: 400;
                 font-size: 2rem;
+                text-decoration: underline;
             }
             #header {
                 background-color: #f0eeee;
@@ -50,7 +51,11 @@
                 font-size: 20px;
             }
             .vspace-top {
-                margin-top: 30px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            .publication-offset {
+                margin-left: 5%;
             }
             .publication-image {
                 width: 150px;
@@ -64,6 +69,15 @@
             }
             .publication-authors {
                 font-style: italic;
+            }
+            @media (min-width: 576px) {
+                .publication-form {
+                    display: -ms-flexbox;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                }
             }
         </style>
     </head>
@@ -81,7 +95,7 @@
                         <img src='images/portrait.jpg' class='img-fluid'>
                     </div>
 
-                    <div class="col">
+                    <div class="col publication-offset">
                     <div id='header-text-name'>
                         Nick Watters
                     </div>
@@ -103,7 +117,7 @@
         </div>
 
         <div class='container'>
-            <div class='row vspace-top'>
+            <div class='row'>
                 <div class='col offset-sm-1'>
                     
                     <div class='vspace-top'>
@@ -137,16 +151,16 @@
                         <h1>Ongoing Projects</h1>
                     </div>
 
-                    <div class='row vspace-top'>
-                        <div class="col-sm-3">
+                    <div class='publication-form'>
+                        <div class="col-sm-2">
                             <div class="publication-image">
                                 <img src="images/multi_object_memory.jpg?raw=true" width="100%">
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col publication-offset">
                             <div class='publication-title'>
-                                Representation of Multi-Object Scenes in Primate Frontal Cortex.
+                                Representation of Multi-Object Scenes in Primate Frontal Cortex
                             </div>
                             <div class='publication-desc'>
                                 Work in progress
@@ -157,16 +171,16 @@
                         </div>
                     </div>
 
-                    <div class='row vspace-top'>
-                        <div class="col-sm-3">
+                    <div class='publication-form'>
+                        <div class="col-sm-2">
                             <div class="publication-image">
-                                <img src="images/multi_object_prediction.gif?raw=true" width="100%">
+                                <img src="images/multi_object_prediction.gif?raw=true" width="100%" style='border:1px solid #000000'>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col publication-offset">
                             <div class='publication-title'>
-                                Neural Mechanisms of Kinematics Prediction in the Primate Brain.
+                                Neural Mechanisms of Kinematics Prediction in the Primate Brain
                             </div>
                             <div class='publication-desc'>
                                 Work in progress
@@ -181,16 +195,16 @@
                         <h1>Selected Publications</h1>
                     </div>
 
-                    <div class='row vspace-top'>
-                        <div class="col-sm-3">
+                    <div class='publication-form'>
+                        <div class="col-sm-2">
                             <div class="publication-image">
                                 <img src="images/maze_set_go.gif?raw=true" width="100%">
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col publication-offset">
                             <div class='publication-title'>
-                                Modeling Human Eye Movements with Neural Networks in a Maze-Solving Task.
+                                Modeling Human Eye Movements with Neural Networks in a Maze-Solving Task
                             </div>
                             <div class='publication-desc'>
                                 arXiv 2022, PMLR 2022, CCN 2022
@@ -204,16 +218,16 @@
                         </div>
                     </div>
 
-                    <div class='row vspace-top'>
-                        <div class="col-sm-3">
+                    <div class='publication-form'>
+                        <div class="col-sm-2">
                             <div class="publication-image">
                                 <img src="images/moog.gif?raw=true" width="100%">
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col publication-offset">
                             <div class='publication-title'>
-                                Modular Object-Oriented Games.
+                                Modular Object-Oriented Games
                             </div>
                             <div class='publication-desc'>
                                 arXiv 2021
@@ -229,16 +243,16 @@
                         </div>
                     </div>
 
-                    <div class='row vspace-top'>
-                        <div class="col-sm-3">
+                    <div class='publication-form'>
+                        <div class="col-sm-2">
                             <div class="publication-image">
                                 <img src="images/cobra.png?raw=true" width="100%" id='image'>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col publication-offset">
                             <div class='publication-title'>
-                                COBRA: Data-Efficient Model-Based RL through Unsupervised Object Discovery and Curiosity-Driven Exploration.
+                                COBRA: Data-Efficient Model-Based RL through Unsupervised Object Discovery and Curiosity-Driven Exploration
                             </div>
                             <div class='publication-desc'>
                                 arXiv 2019, ICML Workshop 2019
@@ -252,16 +266,16 @@
                         </div>
                     </div>
 
-                    <div class='row vspace-top'>
-                        <div class="col-sm-3">
+                    <div class='publication-form'>
+                        <div class="col-sm-2">
                             <div class="publication-image">
                                 <img src="images/spriteworld.gif?raw=true" width="100%" id='image'>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col publication-offset">
                             <div class='publication-title'>
-                                Spriteworld: A Flexible, Configurable Reinforcement Learning Environment.
+                                Spriteworld: A Flexible, Configurable Reinforcement Learning Environment
                             </div>
                             <div class='publication-desc'>
                                 GitHub 2019
@@ -275,16 +289,16 @@
                         </div>
                     </div>
 
-                    <div class='row vspace-top'>
-                        <div class="col-sm-3">
+                    <div class='publication-form'>
+                        <div class="col-sm-2">
                             <div class="publication-image">
-                                <img src="images/iodine.gif?raw=true" width="100%" id='image'>
+                                <img src="images/iodine.gif?raw=true" width="100%" id='image' style='border:1px solid #000000'>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col publication-offset">
                             <div class='publication-title'>
-                                Multi-Object Representation Learning with Iterative Variational Inference.
+                                Multi-Object Representation Learning with Iterative Variational Inference
                             </div>
                             <div class='publication-desc'>
                                 ICML 2019
@@ -299,16 +313,16 @@
                         </div>
                     </div>
 
-                    <div class='row vspace-top'>
-                        <div class="col-sm-3">
+                    <div class='publication-form'>
+                        <div class="col-sm-2">
                             <div class="publication-image">
                                 <img src="images/monet.gif?raw=true" width="100%" id='image'>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col publication-offset">
                             <div class='publication-title'>
-                                MONet: Unsupervised Scene Decomposition and Representation.
+                                MONet: Unsupervised Scene Decomposition and Representation
                             </div>
                             <div class='publication-desc'>
                                 arXiv 2019
@@ -324,16 +338,16 @@
                         </div>
                     </div>
 
-                    <div class='row vspace-top'>
-                        <div class="col-sm-3">
+                    <div class='publication-form'>
+                        <div class="col-sm-2">
                             <div class="publication-image">
                                 <img src="images/spatial_broadcast.jpg?raw=true" width="100%" id='image'>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col publication-offset">
                             <div class='publication-title'>
-                                Spatial Broadcast Decoder: A Simple Architecture for Learning Disentangled Representations in VAEs.
+                                Spatial Broadcast Decoder: A Simple Architecture for Learning Disentangled Representations in VAEs
                             </div>
                             <div class='publication-desc'>
                                 arXiv 2019, ICLR LLD workshop, 2019
@@ -347,16 +361,16 @@
                         </div>
                     </div>
 
-                    <div class='row vspace-top'>
-                        <div class="col-sm-3">
+                    <div class='publication-form'>
+                        <div class="col-sm-2">
                             <div class="publication-image">
                                 <img src="images/visual_interaction_networks_cropped.gif?raw=true" width="100%" id='image'>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col publication-offset">
                             <div class='publication-title'>
-                                Visual Interaction Networks.
+                                Visual Interaction Networks
                             </div>
                             <div class='publication-desc'>
                                 NeurIPS 2017
@@ -370,16 +384,16 @@
                         </div>
                     </div>
 
-                    <div class='row vspace-top'>
-                        <div class="col-sm-3">
+                    <div class='publication-form'>
+                        <div class="col-sm-2">
                             <div class="publication-image">
                                 <img src="images/spike_train_entropy.jpg?raw=true" width="100%" id='image'>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col publication-offset">
                             <div class='publication-title'>
-                                Neuronal Spike Train Entropy Estimation by History Clustering.
+                                Neuronal Spike Train Entropy Estimation by History Clustering
                             </div>
                             <div class='publication-desc'>
                                 Neural Computation, 2014
